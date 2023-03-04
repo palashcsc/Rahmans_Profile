@@ -1,0 +1,657 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css" type="text/css" />
+
+    <title>Rahmans_WP</title>
+    <style type="text/css">
+        #testdiv {
+            background-color: green;
+        }
+
+
+        #about-oth {
+            padding: 5% 5%;
+            background-color: #e8ded2;
+        }
+
+            #about-oth p {
+                font-size: 0.9rem;
+                margin-bottom: 0;
+                font-weight: lighter;
+            }
+
+
+
+        .image {
+            display: inline-block;
+        }
+
+            .image img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                transition: all 0.3s ease;
+            }
+
+            .image:hover img {
+                transform: scale(1.1);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            }
+
+            .image span {
+                display: none;
+                position: absolute;
+                top: 18%;
+                left: 10%;
+                transform: translate(-50%, -50%);
+                background-color: rgba(255, 255, 255, 0.7);
+                padding: 10px 20px;
+                border-radius: 10px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .image:hover span {
+                display: inline-block;
+            }
+        .Designation_block {
+            padding: 7% 2%;
+        }
+
+        /*#feedback {
+            padding: 5%;
+            background: #0094ff;
+        }*/
+        .form-group label {
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+        footer{
+            padding:1% 10%;
+            background-color:#3293d4;
+
+        }
+        footer a {
+        color: white;
+        margin: 0% 3%;
+        }
+
+        .nav-link:active {
+            color: red;
+        }
+
+        /*#tutorial {
+            padding: 4% 10%;
+            background: #a3d2ca;
+        }
+
+        .card {
+            transition: 4s;
+            border: 1px solid #ff02c0;
+        }
+
+            .card:hover {
+                transform: scale(1.1);
+                box-shadow: 2px 6px 5px black;
+            }*/
+
+
+        .card img {
+            width: 200px;
+            height: 200px;
+            /*border-radius: 50%;
+                transition: all 0.3s ease;*/
+        }
+    </style>
+
+
+
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-md bg-light navbar-sky fixed-top">
+                <a href="#" class="navbar-brand">
+                    <img src="images/amber_logo.png" alt="logo" style="width:40px" />
+                </a>
+
+                <a href="#" class="navbar-brand">
+                    <h2 style="font-family:'Brush Script MT';font-style:italic">Start Even Others Stop !!!</h2>
+                </a>
+                <button class="navbar-toggler bg-light active" type="button" data-toggle="collapse" data-target="#navmenu" aria-controls="#navmenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <!--<span class="navbar-toggler-icon"></span>-->
+                    <span><i class="fas fa-bars navbar-icon"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link  text-center text-md-left" href="#banner">Home</a></li>
+                        <li class="nav-item"><a class="nav-link  text-center text-md-left" href="#tutorial">Tutorial</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle  text-center text-md-left" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Favorite
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="width:20px">
+                                <a class="dropdown-item text-center text-md-left" href="#">Technologies</a>
+                                <a class="dropdown-item text-center text-md-left" href="#">Books</a>
+                                <a class="dropdown-item text-center text-md-left" href="#">Languages</a>
+                                <a class="dropdown-item text-center text-md-left" href="#">Countries</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-md-left" href="#">Hobbies</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link  text-center text-md-left" href="#about-oth">Profile</a></li>
+                        <li class="nav-item"><a class="nav-link  text-center text-md-left" href="#feedback">Contact</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+            <section id="banner">
+                <div class="banner-container d-flex justify-content-center align-items-center">
+                    <div class="text-center">
+                        <div ><h1 class="foint-weight-bolder mb-3 text-sm" style="background-color: transparent"> Learning to be Rich || Rich to be a Learner!!!</h1></div>                        
+                        <button class="btn btn-primary btn-lg mr-3" onclick="location.href='#Tutorial'"><i class="fas fa-play mr-2"></i>Tutorials</button>
+                        <button class="btn btn-primary btn-lg mr-3" onclick="window.open('https://www.youtube.com/watch?v=Nd1HpBfLaSs')" class="request-callback"><i class="fab fa-youtube mr-2"></i>Subcribe</button>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </header>
+        <main>
+
+            <section id="Features">
+
+                <div class="features text-center">
+                    <div class="row">
+                        <div class="col-lg-4 d-block d-lg-flex">
+                            <div class="features-col">
+                                <i class="fas fa-hand-holding-usd fa-3x icon-style rounded-circle"></i>
+                                <h5 class="foint-weight-bold ">Free to Use</h5>
+                                <p class="small">Results-driven software developer with 7+ years of experience designing and implementing software solutions for clients. Strong background in C#, MVC, JavaScript, JQuery, MSSQL, Bootstrap, and HTML.  </p>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 d-block d-lg-flex">
+                            <div class="features-col">
+                                <i class="fas fa-hand-holding-usd fa-3x icon-style rounded-circle"></i>
+                                <h5 class="foint-weight-bold ">Free to Use</h5>
+                                <p class="small">Results-driven software developer with 7+ years of experience designing and implementing software solutions for clients. Strong background in C#, MVC, JavaScript, JQuery, MSSQL, Bootstrap, and HTML.  </p>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 d-block d-lg-flex">
+                            <div class="features-col">
+                                <i class="fas fa-hand-holding-usd fa-3x icon-style rounded-circle"></i>
+                                <h5 class="foint-weight-bold ">Free to Use</h5>
+                                <p class="small">Strong background in C#, MVC, JavaScript, JQuery, MSSQL, Bootstrap, and HTML.  </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <hr />
+            <section id="about-oth">
+                <div class="section-title">
+                    <h2 class="text-center text-light">Portfolio</h2>
+                    <hr class="hr-style" />
+                </div>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="basic-desc text-center text-lg-left">
+                            <i class="icon-style rounded-circle far fa-user fa-2x"></i>
+                            <h5>Personal info</h5>
+                            <p>MD. MASHIUR RAHMAN PALASH</p>
+                            <p>Software Engineer</p>
+                            <p>BSc (Hons) in Business Information Technology</p>
+                            <p>Address: House# Ja-1/3, 7th floor, Link Road</p>
+                            <p>Gudaraghat,Middle Badda, Dhaka-1212, Bangladesh.</p>
+                            <p>Email: <a href="mailto:>palashltf@gmail.com">palashltf@gmail.com</a>,<a href="mailto:>palash@amber.com.bd">palash@amber.com.bd</a> </p>
+                            <p>Cell   :<b>+8801730737887</b></p>
+                            <p>
+                                <a href="https://drive.google.com/file/d/17Q0jPwhnNbmEBWRHFJaLUCHAJwpckeoE/view?usp=share_link">
+
+                                    <button class="btn btn-primary"> Download CV</button>
+
+                                </a>
+                            </p>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="text-center text-lg-right">
+                            <div class="image" align="right">
+                                <img src="images/Rahman.jpg" height="200px" width="200px" style="border: 5px solid #555;" />
+                                <span class=" text-center col-lg-left" style="font-family:'Century Gothic';font-style:italic;color:red">Md. Mashiur Rahman Palash<br />Software Enigineer<br />Amber Group</span>
+                            </div>
+
+                        </div>
+                    </div>                  
+                    </div>
+            </section>
+            <hr />
+            <section id="objective_sum">
+                <div class="basic-desc text-center text-lg-left"><h3>Objectives</h3></div>                
+                <div>
+                    <p align="justify">I would like to work in a dynamic and innovative company where I can utilize my skills and knowledge to contribute to the development of cutting-edge software solutions through hard working for strengthening my further career. </p>
+                </div>
+                <hr />
+                <div class="basic-desc text-center text-lg-left"><h3>Summary</h3></div>
+                <div>
+                    <p align="justify">Results-driven software developer with 7+ years of experience designing and implementing software solutions for clients. Strong background in C#, MVC, JavaScript, JQuery, MSSQL, Bootstrap, and HTML. Proven track record of successfully leading development projects, resulting in increased efficiency and customer satisfaction. Proficient in agile development methodologies, object-oriented programming principles, and Microsoft Visual Studio. Moreover hands on experienced in networking which integrates my career further. Holds a Bachelor's degree in Business Information Technology .Passionate about creating innovative and user-friendly software solutions.  </p>
+                </div>
+
+                <!--<div class="skills">                   
+                    <h3><u>Summary</u></h3>
+                    <p align="justify">Results-driven software developer with 7+ years of experience designing and implementing software solutions for clients. Strong background in C#, MVC, JavaScript, JQuery, MSSQL, Bootstrap, and HTML. Proven track record of successfully leading development projects, resulting in increased efficiency and customer satisfaction. Proficient in agile development methodologies, object-oriented programming principles, and Microsoft Visual Studio. Moreover hands on experienced in networking which integrates my career further. Holds a Bachelor's degree in Business Information Technology .Passionate about creating innovative and user-friendly software solutions.  </p>
+
+
+                </div>-->
+                <div class="basic-desc text-center text-lg-left" style="border-color:red">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Software Development on ASP.Net using C#</li>
+                        <li>Web development HTML,CSS,Bootstrap,JavaScript,Angular.</li>
+                        <li>MSSQL Database Design,Backup,Restoration,Scheduler.</li>
+                        <li>Write Store procedure ,Function,Trigers.</li>
+                        <li>Queries to generate various reports on Business aspects.</li>
+                        <li>Reporting : Telerik Reporting , RDLC</li>
+                        <li>Version Control: Git & Github,Team Foundation Server</li>
+                        <li>Project Mangement Tool : Asana</li>
+                        <li>Design, Implementation and Maintenance Computer Network such as LAN,MAN, WAN ,VPN through UTP, Fiber Optic and Wireless as well.</li>
+                        <li>Adept in configuring various types of Networking Devices and tools e.i routing and switching.</li>
+                        <li>Security surveillances design and implementation like Security alarms, CCTV, IP Cameras.</li>
+                        <li>Sound knowledge on Operating System Windows, Linux, CentoS.</li>
+                        <li>Linux Server configuration such as DNS, Web, FTP, SquirrelMail, SAMBA, DHCP, Proxy and so on.</li>
+                        <li>Excellent communication and interpersonal skills to lead a team or working under pressure.</li>
+                    </ul>
+                </div>
+
+
+            </section>
+
+            <section id="Achievement">
+
+                <div class="features text-center">
+                    <div id="AchiveMentID" class="text-center text-lg-left"><h3>Achievement</h3></div>
+                    <div class="row">
+                        <div class="col-lg-4 d-block d-lg-flex">
+                            <div class="features-col">
+                                <i class="fas fa-hand-holding-usd fa-3x icon-style rounded-circle"></i>
+                                <h5 class="foint-weight-bold ">Amber Board Mills ERP</h5>
+                                <h2 class="small font-weight-bold text-lg-left ">Coverd Modules</h2>
+                                <!--<p class="small">Results-driven software developer with 7+ years of experience designing and implementing software solutions for clients. Strong background in C#, MVC, JavaScript, JQuery, MSSQL, Bootstrap, and HTML.  </p>-->
+                                <ul class=" small text-lg-left" >
+                                    <li>Sales</li>
+                                    <li>Inventory</li>
+                                    <li>Production</li>
+                                    <li>Accounts</li>
+                                    <li>Reports</li>
+                                   
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 d-block d-lg-flex">
+                            <div class="features-col">
+                                <i class="fas fa-hand-holding-usd fa-3x icon-style rounded-circle"></i>
+                                <h5 class="foint-weight-bold ">Amber Super Paper ERP</h5>
+                                <h2 class="small font-weight-bold text-lg-left ">Coverd Modules</h2>
+                                <!--<p class="small">Results-driven software developer with 7+ years of experience designing and implementing software solutions for clients. Strong background in C#, MVC, JavaScript, JQuery, MSSQL, Bootstrap, and HTML.  </p>-->
+                                <ul class=" small text-lg-left">
+                                    <li>Sales</li>
+                                    <li>Inventory</li>
+                                    <li>Production</li>
+                                    <li>Accounts</li>
+                                    <li>Commercial</li>
+                                    <li>Reports</li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 d-block d-lg-flex">
+                            <div class="features-col">
+                                <i class="fas fa-hand-holding-usd fa-3x icon-style rounded-circle"></i>
+                                <h5 class="foint-weight-bold ">HRM & Payroll Systems</h5>
+                                <h2 class="small font-weight-bold text-lg-left ">Coverd Modules</h2>
+                                <!--<p class="small">Results-driven software developer with 7+ years of experience designing and implementing software solutions for clients. Strong background in C#, MVC, JavaScript, JQuery, MSSQL, Bootstrap, and HTML.  </p>-->
+                                <ul class=" small text-lg-left">
+                                    <li>Attendance Process</li>
+                                    <li>Shift Management</li>
+                                    <li>Leave Management</li>
+                                    <li>Appraisal</li>
+                                    <li>Salary Process</li>
+                                    <li>Reports</li>                                 
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section id="EmpHistory">
+                <div class="basic-desc text-center text-lg-left"><h3>Employment History</h3></div>
+                <a>Total year of Experiences: <b>15+ Year(s)</b></a>
+                <div class="row">
+                    <div class="Designation_block col-lg-5">
+                        <p><b>Software Engineer</b> ( From Sep 20, 2015 - Continuing)<br />Department of MIS<br />Amber Board Mills Ltd.<br />45 Navana Tower,7th Floor, Gulshan-1, Dhaka-1212<br /></p>
+                    </div>
+                    <div class="col-lg-7">
+
+                        <h5><u>Duties and Resposibilities</u></h5>
+                        <ul>
+                            <li>Software Requirement Analysis and Design</li>
+                            <li>UI Design and Coding</li>
+                            <li>Database Design and Development</li>
+                            <li>Write Store Procedure, Function, Triggers ,Views</li>
+                            <li>Report Modification and New report Generate as per Higher management requirements</li>
+                            <li>Error Findings and Troubleshooting</li>
+                            <li>Software Implementation and User Training</li>
+                            <li>Ensure Daily User Support and fixing problem</li>
+                            <li>Database backup and maintenance</li>
+                        </ul>
+                    </div>
+                </div>               
+     
+                <hr />
+
+                <div class="row">
+                    <div class="Designation_block col-lg-5">
+                        <p><b>Network Engineer </b> ( From Feb 25, 2015- Sep 20, 2015)<br />Department of MIS<br />Amber IT Limited<br />45 Navana Tower,7th Floor, Gulshan-1, Dhaka-1212<br /></p>
+                    </div>
+                    <div class="col-lg-7">
+
+                        <h5><u>Duties and Resposibilities</u></h5>
+                        <ul>
+                            <li>Server Installation, Backup and maintenance at NOC (Network Operation Center) </li>
+                            <li>Network Infrastructure development and maintenance.</li>
+                            <li>Visit many corporate Office, Factories, Bank and Provide Network Solutions.</li>
+                            <li>Install and configure DNS Server, Mail Server, FTP Server, Proxy Server and so on</li>
+                            <li>Storage Device Configure and Regular Data backup.</li>
+                            <li>Mail client software configure and troubleshooting such as Outlook Express and Thunderbird Mozilla.</li>
+                            <li>Installation and configuration various types of Router, Switch, Access Point and Wireless devices </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+
+
+                <div class="row">
+                    <div class="Designation_block col-lg-5">
+                        <p><b>Assistant Network Engineer  </b> ( From Nov 15, 2007- Feb 25, 2015)<br />Department of MIS<br />Amber IT Limited<br />45 Navana Tower,7th Floor, Gulshan-1, Dhaka-1212<br /></p>
+                    </div>
+                    <div class="col-lg-7">
+
+                        <h5><u>Duties and Resposibilities</u></h5>
+                        <ul>
+                            <li>Survey client premises, design and establish Intranet/Internet connectivity using Optical Fiber, UTP or Wireless network.</li>
+                            <li>Configure, maintenance and troubleshooting LAN, MAN, WAN, VPN</li>
+                            <li>Installation and configuration various types of Router, Switch, Access Point and Wireless devices </li>
+                            <li>IP Phone, CCTV, IP Camera setup and maintenance.</li>
+                            <li>Computer Hardware and Software troubleshooting.</li>
+                            <li>Call Centre Support.</li>
+                            <li>Network Monitoring and Troubleshooting.</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+            </section>
+            <section id="feedback">
+                <div class="section-title">
+                    <h2 class="text-center text-light">Feedback</h2>
+                    <hr class="hr-style"/>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                            </ol>
+
+
+                            <div class="carousel-inner ">
+                                <div class="carousel-item ">
+                                    <p>1.Survey client premises, design and establish Intranet/Internet connectivity using Optical Fiber, UTP or Wireless network.</p>
+                                    <img class="rounded-circle feedback-img" src="images/Rahman.jpg" alt="Nopic" />
+                                    <h2>Mashiur Rahman</h2>
+                                </div>
+                                <div class="carousel-item active">
+                                    <p>2.Survey client premises, design and establish Intranet/Internet connectivity using Optical Fiber, UTP or Wireless network.</p>
+                                    <img class="rounded-circle feedback-img" src="images/palashPP.jpg" alt="Nopic" />
+                                    <h2>Mashiur Rahman</h2>
+                                </div>
+                                <div class="carousel-item">
+                                    <p>3.Survey client premises, design and establish Intranet/Internet connectivity using Optical Fiber, UTP or Wireless network.</p>
+                                    <img class="rounded-circle feedback-img" src="images/JeansPalash.jpg" alt="Nopic" />
+                                    <h2>Mashiur Rahman</h2>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                 
+                </div>
+
+               </section>
+
+           <section id="tutorial">
+               <div class="title text-center">
+                   <h3 class="foint-weight-bolder mb-3">Tutorial</h3>
+                   <hr class="hr-style" style="border-color:black" />
+               </div>
+
+
+               <div class="row mb-3">
+                   <div class="col-lg-3 col-md-6 col-sm-12 d-block d-lg-flex">
+                       <div class="card mb-5 ml-lg-0">
+                           <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaVgSCffgNQiFQiDYBzvp1H5Vf5WnnPAlTTg&usqp=CAU" alt="card image" />
+                           <div class="card-body">
+                               <h4 class="card-title foint-weight-bold">Bootstrap Domain</h4>
+                               <a href="#" class="stretched-link"></a>
+                               <!--<p class="card-text">Bootstrap is an HTML, CSS and JS library that focuses on simplifying the development of informative web pages (as opposed to web applications). </p>-->
+                               <!--<a class="card-link">Learn More</a>-->
+                           </div>
+
+
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-6 col-sm-12 d-block d-lg-flex">
+                       <div class="card mb-5 ml-lg-0">
+                           <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Fzhf-f4owG8Lp9pLg8GZ0OEg2RYbUwoHxw&usqp=CAU" alt="card image" />
+                           <div class="card-body">
+                               <h4 class="card-title foint-weight-bold">C# Learnig</h4>
+                               <a href="#" class="stretched-link"></a>
+                               <!--<p class="card-text">The most prominent components of Bootstrap are its layout components, as they affect an entire web page.Bootstrap is an HTML, CSS and JS library that focuses on simplifying the development of informative web pages (as opposed to web applications). </p>-->
+                               <!--<a href="#" class="stretched-link"></a>-->
+                           </div>
+
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-6 col-sm-12 d-block d-lg-flex">
+                       <div class="card mb-5 ml-lg-0">
+                           <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZIpMn192KvDAgZgrb9tMDsNFIvLdeDQIQkw&usqp=CAU" alt="card image" />
+
+                           <div class="card-body">
+                               <h4 class="card-title foint-weight-bold">Architecture</h4>
+                               <!--<p class="card-text">Bootstrap is an HTML, CSS and JS library that focuses on simplifying the development of informative web pages (as opposed to web applications). </p>-->
+                               <!--<a class="card-link">Learn More</a>-->
+                               <a href="#" class="stretched-link"></a>
+                           </div>
+
+
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-6 col-sm-12 d-block d-lg-flex">
+                       <div class="card mb-5 ml-lg-0">
+                           <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkLdJB7EGAcublnTgfQI7_NYjxfkli0ZWWFw&usqp=CAU" alt="card image" />
+
+                           <div class="card-body">
+                               <h4 class="card-title foint-weight-bold">RDBMS</h4>
+                               <!--<p class="card-text">Bootstrap is an HTML, CSS and JS library that focuses on simplifying the development of informative web pages (as opposed to web applications). </p>-->
+                               <!--<a class="card-link">Learn More</a>-->
+                               <a href="#" class="stretched-link"></a>
+                           </div>
+
+
+                       </div>
+                   </div>
+
+               </div>
+               <div class="row mb-3">
+                   <div class="col-lg-3 col-md-6 col-sm-12 d-block d-lg-flex">
+                       <div class="card mb-5 ml-lg-0">
+                           <img class="card-img-top" src="data:image/jpeg;base64,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" alt="card image" />
+                           <div class="card-body">
+                               <h4 class="card-title foint-weight-bold">AngularJS</h4>
+                               <a href="#" class="stretched-link"></a>
+                               <!--<p class="card-text">Bootstrap is an HTML, CSS and JS library that focuses on simplifying the development of informative web pages (as opposed to web applications). </p>-->
+                               <!--<a class="card-link">Learn More</a>-->
+                           </div>
+
+
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-6 col-sm-12 d-block d-lg-flex">
+                       <div class="card mb-5 ml-lg-0">
+                           <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Fzhf-f4owG8Lp9pLg8GZ0OEg2RYbUwoHxw&usqp=CAU" alt="card image" />
+                           <div class="card-body">
+                               <h4 class="card-title foint-weight-bold">React</h4>
+                               <a href="#" class="stretched-link"></a>
+                               <!--<p class="card-text">The most prominent components of Bootstrap are its layout components, as they affect an entire web page.Bootstrap is an HTML, CSS and JS library that focuses on simplifying the development of informative web pages (as opposed to web applications). </p>-->
+                               <!--<a href="#" class="stretched-link"></a>-->
+                           </div>
+
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-6 col-sm-12 d-block d-lg-flex">
+                       <div class="card mb-5 ml-lg-0">
+                           <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZIpMn192KvDAgZgrb9tMDsNFIvLdeDQIQkw&usqp=CAU" alt="card image" />
+
+                           <div class="card-body">
+                               <h4 class="card-title foint-weight-bold">Notej s</h4>
+                               <!--<p class="card-text">Bootstrap is an HTML, CSS and JS library that focuses on simplifying the development of informative web pages (as opposed to web applications). </p>-->
+                               <!--<a class="card-link">Learn More</a>-->
+                               <a href="#" class="stretched-link"></a>
+                           </div>
+
+
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-6 col-sm-12 d-block d-lg-flex">
+                       <div class="card mb-5 ml-lg-0">
+                           <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkLdJB7EGAcublnTgfQI7_NYjxfkli0ZWWFw&usqp=CAU" alt="card image" />
+
+                           <div class="card-body">
+                               <h4 class="card-title foint-weight-bold">Oracle</h4>
+                               <!--<p class="card-text">Bootstrap is an HTML, CSS and JS library that focuses on simplifying the development of informative web pages (as opposed to web applications). </p>-->
+                               <!--<a class="card-link">Learn More</a>-->
+                               <a href="#" class="stretched-link"></a>
+                           </div>
+
+
+                       </div>
+                   </div>
+
+               </div>
+           </section>
+  
+               
+
+           
+            <section id="contact">
+                <div class="section-title">
+                    <h2 class="text-center text-light">Contact Me</h2>
+                    <hr class="hr-style" />
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form action="https://formsubmit.co/palashltf@gmail.com" method="POST" enctype="text/plain" class="was-validated">
+                            <div class="form-group mb-1">
+                                <label for="fullname">Full Name</label>
+                                <input type="text" class="form-control" name="fullname" required />
+                                <div class="valid-feedback"> Valid </div>
+                                <div style="color:white" class="invalid-feedback">Please Enter Your Fullname</div>
+
+                            </div>
+                            <div class="form-group mb-1">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" name="email" required />
+                                <div class="valid-feedback"> Valid </div>
+
+                            </div>
+                            <div class="form-group mb-1">
+                                <label for="messages">Messages</label>
+                                <textarea style="resize:none" class="form-control" name="messages" id="" cols="30" rows="4"></textarea>
+                                <div class="valid-feedback"> Valid </div>
+
+                            </div>
+                            <div class="form-group text-center mb-1">
+                                <input type="button" class="btn btn-primary mr-3" value="Submit" />
+                                <input type="button" class="btn btn-primary" value="Reset" />
+                              
+                            </div>
+                            <a href="https://formsubmit.co/el/howiju" style="font-weight:bold; font-style:italic; color:white"><i class="fa fa-envelope mr-3"></i>You may E-Mail me for any queries</a>
+
+                        </form>
+            
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </main>
+        <footer>
+            <div class="row text-center text-white">
+                <div class="col-lg-6 text-center mb-3 mb-lg-0">
+                    <p class="small mb-0 mt-1" style="font-style:italic">&copy;Copyright by Md.Mashiur Rahman</p>
+                </div>
+                <div class="text-center col-lg-6">
+                    <a href="">Home</a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                </div>
+
+            </div>
+           
+        </footer>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+</body>
+</html>
